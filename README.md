@@ -5,7 +5,10 @@ Please make sure it is connected to the internet
 		git clone https://gitlab.com/mohrahmatullah/hollywings
 		composer install
 		copy .env.example to .env
+		php artisan migrate
 
+		database
+		folder sql/holliwingshq.sql
 
 -- Editing --
 		DB_CONNECTION=mysql
