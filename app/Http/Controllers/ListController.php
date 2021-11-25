@@ -19,7 +19,7 @@ class ListController extends Controller
                 $data['data'][] = $value;
             }else{
                 $data['status']['code'] = 404;
-                $data['status']['message'] = 'Found';
+                $data['status']['message'] = 'Not Found';
             }
             
         }
@@ -37,7 +37,7 @@ class ListController extends Controller
                 $data['data'][] = $value;
             }else{
                 $data['status']['code'] = 404;
-                $data['status']['message'] = 'Found';
+                $data['status']['message'] = 'Not Found';
             }
             
         }
@@ -58,7 +58,7 @@ class ListController extends Controller
                 $data['data'][] = $value;
             }else{
                 $data['status']['code'] = 404;
-                $data['status']['message'] = 'Found';
+                $data['status']['message'] = 'Not Found';
             }
             
         }
@@ -75,7 +75,7 @@ class ListController extends Controller
                 $data['data'][] = $value;
             }else{
                 $data['status']['code'] = 404;
-                $data['status']['message'] = 'Found';
+                $data['status']['message'] = 'Not Found';
             }
             
         }
