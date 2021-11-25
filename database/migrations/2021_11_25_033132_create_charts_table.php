@@ -18,6 +18,7 @@ class CreateChartsTable extends Migration
             $table->string('title');
             $table->string('singer');
             $table->string('image');
+            $table->string('top');
             $table->timestamps();
         });
     }
