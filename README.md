@@ -4,6 +4,16 @@ Please make sure it is connected to the internet
 		
 		git clone https://gitlab.com/mohrahmatullah/hollywings
 		composer install
+		copy .env.example to .env
+
+
+-- Editing --
+		DB_CONNECTION=mysql
+		DB_HOST=127.0.0.1
+		DB_PORT=3306
+		DB_DATABASE=laravel
+		DB_USERNAME=root
+		DB_PASSWORD=
 ### Cache clear
 		
 		php artisan config:cache
