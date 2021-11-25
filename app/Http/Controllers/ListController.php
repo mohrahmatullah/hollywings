@@ -65,6 +65,23 @@ class ListController extends Controller
         return response($data)->header('Content-Type', 'json');
     }
 
+    public function user(Request $request)
+    {
+        $product = DB::table('users')->get();
+        foreach ($product as $key => $value) {
+            if (!empty($value)) {
+                $data['status']['code'] = 200;
+                $data['status']['message'] = 'Found'; 
+                $data['data'][] = $value;
+            }else{
+                $data['status']['code'] = 404;
+                $data['status']['message'] = 'Found';
+            }
+            
+        }
+        return response($data)->header('Content-Type', 'json');
+    }
+
     function ordinal($number) {
         $ends = array('th','st','nd','rd','th','th','th','th','th','th');
         if ((($number % 100) >= 11) && (($number%100) <= 13))

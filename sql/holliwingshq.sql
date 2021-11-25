@@ -112,5 +112,7 @@ CREATE TABLE `users` (
   UNIQUE KEY `users_email_unique` (`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
+(1,	'holypeople',	'holypeople@test@email.com',	'2021-11-25 05:17:54',	'fcea920f7412b5da7be0cf42b8c93759',	NULL,	'2021-11-25 05:17:54',	'2021-11-25 05:17:54');
 
--- 2021-11-25 05:08:32
+-- 2021-11-25 05:19:55

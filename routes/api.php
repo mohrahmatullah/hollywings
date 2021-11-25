@@ -22,3 +22,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('product', [ListController::class, 'product'])->name('product');
 Route::get('charts', [ListController::class, 'charts'])->name('charts');
 Route::get('menuoptions', [ListController::class, 'menuoptions'])->name('menuoptions');
+Route::get('user', [ListController::class, 'user'])->name('user');
